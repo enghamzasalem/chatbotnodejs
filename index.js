@@ -2,7 +2,6 @@
 const express =require('express')
 const bodyParser=require('body-parser')
 const request=require('request')
-
 const app=express()
 
 app.set('port',(process.env.PORT || 5000))
@@ -16,11 +15,11 @@ app.get('/',function(req,res){
 	
 })
 app.get('/webhook/',function(req,res){
-	id (req.query['hub.verify_token'] === "123456"){
+	id (req.query['hub.verify_token'] === "123456")
+    {
 		res.send(req.query['hub.challenge'])
 	}
-	res.send("Wrong token")
-		
+	res.send("Wrongtoken")
 })
 
 
