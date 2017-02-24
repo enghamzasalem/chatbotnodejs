@@ -15,16 +15,16 @@ app.get('/',function(req,res){
 	
 	
 })
-app.get('/webhook/',function(req,res){
-	id (req.query['hub.verify_token']==="123456"){
-		res.send(req.query['hub.challenge'])
-	}
-	res.send("Wrong token")
+// app.get('/webhook/',function(req,res){
+	// id (req.query['hub.verify_token'] === "123456"){
+		// res.send(req.query['hub.challenge'])
+	// }
+	// res.send("Wrong token")
 		
-})
+// })
 
 
-app.listen(app.get('port'),function(){
-	console.log("running:port")
+// app.listen(app.get('port'),function(){
+	// console.log("running:port")
 	
-} )
+// } )
